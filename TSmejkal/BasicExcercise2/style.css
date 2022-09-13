@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #262e31;
+}
+
+.logo {
+     text-decoration: none;
+}
+
+.logo>a {
+    font-family:'Fredoka One', cursive;
+    font-size: 24px;
+    letter-spacing: 5px;
+    color: #ffaf03;
+}
+
+li, a{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: azure;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+.navbar{
+    list-style: none;
+}
+
+.navbar li{
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+.navbar li a{
+    transition: all 0.3 ease 0s;
+}
+
+.navbar li a:hover {
+    color: cadetblue;
+}
+
+.position{
+    position: sticky;
+}
+
+.album{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 20px 20px;
+    
+}
+
+img{
+    object-fit: cover;
+}
+
+.pic1{
+    grid-area: 1/1/2/3;
+}
+
+.pic2{
+    grid-area: 1/3/3/5;
+}
+
+.pic3{
+    grid-area: 2/1/3/2; 
+}
+
+.pic4{
+    grid-area: 2/2/3/3
+}
+
+.pic5{
+    grid-area: 3/1/4/3
+}
+
+.pic6{
+    grid-area: 3/3/4/5;
+}
